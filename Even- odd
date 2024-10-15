@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<stdbool.h>
+
+//Algorithm
+/*
+    START
+        accept one no as No
+        divide that no by 2
+        if remainder is 0
+        then display the result as even no
+        otherwise display the no as odd
+    STOP    
+*/
+
+//////////////////////////////////////////////
+//
+//  Function Name:  CheckEvenOdd 
+//  Description:    Used to check whether the no is even or odd
+//  Input:          Integer
+//  Output:         Boolean
+//  Author:         Pranita
+//  Date:           4/16/2024
+///////////////////////////////////////////////
+bool CheckEvenOdd(unsigned int iNo)
+{
+    if((iNo % 2)== 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+    
+}
+
+int main()
+{
+    unsigned int iValue=0;
+    bool bRet= false;
+
+    printf("enter the no you want to check");
+    scanf("%d",&iValue);
+
+    bRet = CheckEvenOdd(iValue);
+
+    if(bret==true)
+    {
+        printf("%d is even number",iValue);
+    }
+    else{
+        printf("%d is odd value", iValue);
+    }
+
+    returnn 0;
+}
